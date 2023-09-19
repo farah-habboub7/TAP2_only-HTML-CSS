@@ -1,0 +1,186 @@
+*{
+    font-family: Poppins;
+}
+
+@font-face {
+    font-family:Poppins;
+    src: url(Poppins/Poppins-Medium.ttf);
+}
+
+:root {
+    --primary: #008AAA;
+    --secondary:#D1884F;
+    --primaryOP: #3BBADB;
+    --primaryOP2:rgba(59, 187, 219, 0.48);
+}
+
+.pColor{
+    color: var(--primary);
+}
+.sColor{
+    color: var(--secondary);
+}
+.pOpColor{
+color: var(--primaryOP);
+}
+
+/* nav */
+a{
+    text-decoration: none;
+
+}
+ul{
+    display: flex;
+    justify-content: end;
+}
+li{
+    list-style: none;
+    
+    margin: 0 2rem;
+}
+.linkHover{
+    color: black;
+}
+.active{
+    color: #D1884F;
+}
+.linkHover:hover {
+    color:var(--secondary);
+}
+
+.info{
+    line-height: -5px;
+    font-size: 13px;
+    margin-top: 2.7rem;
+}
+.imgDiv{
+    height: 70%;
+}
+.personalImag{
+    border-radius: 0 0 0 50%;
+    box-shadow: -15px 10px 1px var(--primaryOP2);
+    width: 100%;
+    height: 100%;
+
+}
+
+.bigDiv{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    
+}
+
+.sec1{
+width: 35%;
+margin-top: 4rem;
+}
+
+.sec2{
+ width: 30%;
+ margin-top: 4rem;
+}
+
+.title{
+font-size: 38px;
+font-weight: bold;
+}
+
+
+/* ---Btn--- */
+.bigDivBtn{
+    margin-top: 2.8rem;
+    display: flex;
+}
+button{
+    border: 0;
+    padding: 0.5rem 2rem;
+    border-radius: 4px;
+    text-wrap: nowrap;
+    margin-top: 1rem;
+}
+.btn_duration {
+    background-color: var(--primary);
+    color: white;
+    box-shadow: 0 5px 8px var(--primaryOP2);
+}
+.btn_duration-outline {
+    background-color: white;
+    border:1px solid var(--primary);
+    color: var(--primary);
+    box-shadow: 0 3px 5px rgba(128, 128, 128, 0.44);
+    margin-left: 2rem;
+}
+.btn_duration-outline:hover {
+    border:1px solid var(--primary);
+    background-color: var(--primary);
+    color: white;
+}
+
+
+/* Javascript Question */
+footer{
+    margin-top: 4rem;
+    margin-left: 5rem;
+}
+.line{
+    width: 55%;
+    margin-left: 0;
+}
+.result{
+    text-align: left;
+    margin-left: 5rem;
+}
+.jsP{
+    text-shadow:  0 5px 8px var(--primaryOP2);
+    text-align: left;
+}
+
+/* responsive */
+@media only screen and  (max-width: 768px) {
+    ul{
+        display: block;
+        justify-content: start;
+    }
+    li{
+        margin: .1rem 0 ;
+    }
+    .title{
+        font-size: 30px;
+        font-weight: bold;
+        }
+    .bigDiv{
+        display: block;
+        width: 100%;
+    }
+.sec1{
+    width: 90%;
+    margin: auto;
+    margin-top: 4rem;
+    
+}
+.sec2{
+    width: 90%;
+    margin: auto;
+    margin-top: 4rem;
+}
+  /* btn responsive */
+.bigDivBtn{
+    display: block;
+}
+.btn_duration-outline {
+    margin-left: 0;
+}
+
+.line{
+    width: 90%;
+    margin-left: 5px;
+}
+footer{
+    margin-left: 5px;
+}
+.result{
+    margin-left:5px;
+}
+
+}
